@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/62a0ac685c3db2e1af689ee2
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Ash Bridges",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/62a0ac685c3db2e1af689ee2
+
+###
+
+PATCH http://localhost:3000/subscribers/62a0ac685c3db2e1af689ee2
+Content-Type: application/json
+
+{ 
+    "name": "Ash Bridges"
+}
